@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    
+    <div class="container">
+      <h3>Tien Luong nhan vien</h3>
+      <form>
+        <h3>Lương cố định 1 ngày nhân viên được 100k</h3>
+        <div class="form-group">
+          <input
+            type="text"
+            id="salary"
+            value="100.000"
+            placeholder="luong 1 ngay"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="number"            
+            id="countDate"
+            placeholder="so ngay lam viec"
+          />
+        </div>
+        <button type="button" id="click1" class="btn btn-success">
+          totalSalary
+        </button>
+      </form>
+      <button  class="btn btn-primary retun" id="notify">Ket qua:</button>
+      <form>
+        <h3>Tinh gia tri trung binh</h3>
+        <div class="form-group">
+          <input
+            type="number"           
+            id="number1"
+            placeholder="nhap so thu 1"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="number"            
+            id="number2"
+            placeholder="nhap so thu 2"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="number"            
+            id="number3"
+            placeholder="nhap so thu 3"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="number"           
+            id="number4"
+            placeholder="nhap so thu 4"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="number"           
+            id="number5"
+            placeholder="nhap so thu 5"
+          />
+        </div>
+        <button type="button" onclick= "average()" class="btn btn-success">
+          Tinh
+        </button>
+      </form>
+      <button class="btn btn-primary retun" id="notifyAverage">Ket qua:</button>
+      <h3>Quy doi USD sang VND </h3>
+      <h6>Mac dinh 1USD = 23500VND</h6>
+      <form >
+        <input type="number" id="countMoney" placeholder="nhap so tien can doi">
+        <button type="button" id="click2" class="btn btn-success">
+          Quy Doi Tien
+        </button>
+      </form>
+      <button class="btn btn-primary retun" id="notifyMoney">So tien:</button>
+      <h3>Tinh Dien Tich, Chu Vi Hinh Chu Nhat</h3>
+      <form >
+        <input type="number" id="length" placeholder="chieu dai">
+        <input type="number" id="width" placeholder="chieu rong">
+        <button type="button" onclick="rectangle()" class="btn btn-success" >Tinh</button>
+      </form>
+      <button class="btn btn-primary retun" id="perimeter">chu vi la:</button>
+      <button class="btn btn-primary retun" id="calculus">dien tich la:</button>
+      <h3>tong cua 2 chu so</h3>
+      <form >
+        <input type="text" maxlength="2" id="number6" placeholder="nhap 2 chu so bat ki" >
+        <button type="button" id="sumNumber" class="btn btn-success">Tinh</button>
+      </form>
+      <button class="btn btn-primary retun" id="notifySum">ket qua la:</button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
